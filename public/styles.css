@@ -1,0 +1,872 @@
+:root {
+    --ink: #13222e;
+    --blue: #174d70;
+    --green: #4c6950;
+    --sand: #f4f0e8;
+    --paper: #fffdf9;
+    --line: #d9d7d0;
+    --body: #46525a;
+    --display: 'Manrope', Arial, sans-serif;
+    --sans: 'DM Sans', Arial, sans-serif
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 16px/1.55 var(--sans)
+}
+
+img {
+    display: block;
+    max-width: 100%
+}
+
+a {
+    color: inherit
+}
+
+.shell {
+    width: min(1120px, calc(100% - 48px));
+    margin: auto
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    background: #fff;
+    padding: .6rem;
+    z-index: 20
+}
+
+.topbar {
+    background: var(--ink);
+    color: #e8eef0;
+    font-size: .82rem
+}
+
+.topbar-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: .55rem 0
+}
+
+.topbar a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none
+}
+
+.site-header {
+    background: var(--paper);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(19, 34, 46, .08)
+}
+
+.header-inner {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.brand {
+    display: block;
+    width: 152px
+}
+
+.brand img {
+    width: 100%;
+    height: 54px;
+    object-fit: contain;
+    object-position: left center
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1.55rem;
+    font-size: .94rem;
+    font-weight: 700
+}
+
+nav>a:not(.button) {
+    text-decoration: none
+}
+
+.button {
+    appearance: none;
+    border: 1px solid var(--blue);
+    background: var(--blue);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .78rem 1.1rem;
+    font: 700 .9rem var(--sans);
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s
+}
+
+.button:hover {
+    background: var(--ink);
+    border-color: var(--ink)
+}
+
+.button-small {
+    padding: .58rem .85rem
+}
+
+.button-light {
+    background: #fff;
+    color: var(--ink);
+    border-color: #fff
+}
+
+.button-light:hover {
+    color: #fff;
+    border: 1px solid white;
+}
+
+.button-outline {
+    background: transparent;
+    color: var(--blue);
+    margin-top: 1.75rem
+}
+
+.button-outline:hover {
+    background: black;
+    color: white;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: 1px solid var(--ink);
+    font: 700 .85rem var(--sans);
+    padding: .55rem .7rem
+}
+
+.hero {
+    min-height: 650px;
+    background: var(--ink);
+    color: #fff;
+    display: grid;
+    position: relative;
+    overflow: hidden
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(9, 22, 31, .93) 0%, rgba(9, 22, 31, .67) 44%, rgba(9, 22, 31, .18) 75%), url('/assets/images/Hunt-Home-Improvements-Remodeling-Gallery.jpg') center 43%/cover
+}
+
+.hero-content {
+    position: relative;
+    align-self: center;
+    padding: 7rem 0;
+    max-width: 1120px;
+    width: calc(100% - 48px)
+}
+
+.eyebrow {
+    font-size: .74rem;
+    letter-spacing: .14em;
+    font-weight: 700;
+    margin: 0 0 1.2rem;
+    color: var(--green)
+}
+
+.hero .eyebrow {
+    color: #c3d2c5
+}
+
+.hero h1,
+h2,
+h3 {
+    font-family: var(--display);
+    line-height: 1.05;
+    margin: 0
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 5.75rem);
+    max-width: 750px;
+    letter-spacing: -.06em
+}
+
+.hero h1 em {
+    font-family: Georgia, serif;
+    font-weight: 400
+}
+
+.hero-copy {
+    font-size: 1.1rem;
+    max-width: 530px;
+    color: #e0e9ed;
+    margin: 1.6rem 0 2rem
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem
+}
+
+.text-link {
+    color: var(--blue);
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .25rem
+}
+
+.hero .text-link {
+    color: #fff
+}
+
+.proof {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border-bottom: 1px solid var(--line)
+}
+
+.proof>div {
+    background: var(--paper);
+    padding: 1.3rem 1.5rem
+}
+
+.proof strong,
+.proof span {
+    display: block
+}
+
+.proof strong {
+    font-family: var(--display);
+    font-size: 1.1rem
+}
+
+.proof span {
+    color: var(--body);
+    font-size: .87rem
+}
+
+.section {
+    padding: 7rem 0
+}
+
+.section-heading {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: end;
+    margin-bottom: 3rem
+}
+
+.section-heading .eyebrow {
+    grid-column: 1/-1;
+    margin-bottom: 0
+}
+
+.section h2 {
+    font-size: clamp(2.1rem, 4vw, 3.5rem);
+    letter-spacing: -.05em
+}
+
+.section-heading>p:last-child,
+.about-copy>p:not(.eyebrow),
+.contact-grid>div>p {
+    max-width: 470px;
+    color: var(--body);
+    margin: 0
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line)
+}
+
+.service {
+    padding: 2rem;
+    background: var(--paper);
+    min-height: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.service>p {
+    color: var(--green);
+    font-size: .82rem;
+    margin: 0
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    letter-spacing: -.03em;
+    margin-bottom: .45rem
+}
+
+.service span {
+    color: var(--body);
+    font-size: .95rem;
+    max-width: 300px
+}
+
+.service-featured {
+    grid-row: span 2;
+    padding: 0;
+    min-height: 370px;
+    position: relative;
+    color: #fff;
+    overflow: hidden
+}
+
+.service-featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0
+}
+
+.service-featured:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(10, 21, 28, .75), transparent 60%)
+}
+
+.service-featured div {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    margin-top: auto
+}
+
+.service-featured p {
+    color: #c3d2c5
+}
+
+.about {
+    background: var(--sand)
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 7vw, 8rem);
+    align-items: center
+}
+
+.about-photo {
+    height: 560px
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.about-copy h2 {
+    margin-bottom: 1.5rem
+}
+
+.about-copy .text-link {
+    display: inline-block;
+    margin-top: 1.5rem
+}
+
+.work-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 2rem
+}
+
+.featured-work {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr .85fr;
+    gap: 1rem;
+    height: 460px
+}
+
+.tile {
+    margin: 0;
+    overflow: hidden
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s
+}
+
+.tile:hover img {
+    transform: scale(1.04)
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem
+}
+
+.gallery figure {
+    margin: 0;
+    aspect-ratio: 1;
+    overflow: hidden
+}
+
+.gallery img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+.review-band {
+    background: var(--green);
+    color: #fff;
+    padding: 6.5rem 0
+}
+
+.review-content {
+    max-width: 870px;
+    margin-left: max(calc((100% - 1120px)/2), 24px)
+}
+
+.review-band .eyebrow {
+    color: #d5e1d7
+}
+
+.review-band blockquote {
+    font: 400 clamp(2rem, 4vw, 3.5rem)/1.2 Georgia, serif;
+    margin: 0 0 1.7rem
+}
+
+.text-link-light {
+    color: #fff
+}
+
+.contact {
+    background: var(--sand)
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: clamp(3rem, 8vw, 8rem)
+}
+
+.contact h2 {
+    margin-bottom: 1.3rem
+}
+
+.contact dl {
+    margin: 2.4rem 0 0
+}
+
+.contact dl>div {
+    border-top: 1px solid #c9c4ba;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 90px 1fr
+}
+
+.contact dt {
+    font-size: .8rem;
+    letter-spacing: .1em;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.contact dd {
+    margin: 0
+}
+
+.contact dd a {
+    font-weight: 700
+}
+
+form {
+    background: #fff;
+    padding: 2rem
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    font-size: .9rem;
+    margin-bottom: 1rem
+}
+
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    border: 1px solid #b8b5ae;
+    background: #fff;
+    padding: .7rem;
+    font: 400 1rem var(--sans);
+    border-radius: 0;
+    margin-top: .35rem
+}
+
+textarea {
+    resize: vertical
+}
+
+.honeypot {
+    position: absolute;
+    left: -9999px
+}
+
+.turnstile {
+    min-height: 2px;
+    margin-bottom: .7rem
+}
+
+.form-status {
+    min-height: 1.5rem;
+    margin: .3rem 0;
+    color: var(--blue);
+    font-size: .9rem
+}
+
+.form-status.error {
+    color: #a52a2a
+}
+
+.form-note {
+    font-size: .76rem;
+    color: var(--body);
+    margin-bottom: 0
+}
+
+footer {
+    background: var(--ink);
+    color: #d9e0e2;
+    padding: 3rem 0
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .7rem;
+    align-items: center
+}
+
+.footer-inner .brand {
+    filter: brightness(0) invert(1)
+}
+
+.footer-inner p {
+    margin: 0;
+    font-size: .88rem
+}
+
+.footer-inner p:last-child {
+    grid-column: 2;
+    grid-row: 1/3;
+    text-align: right
+}
+
+@media(max-width:760px) {
+    .shell {
+        width: min(100% - 32px, 1120px)
+    }
+
+    .topbar-inner {
+        font-size: .72rem
+    }
+
+    .header-inner {
+        min-height: 68px
+    }
+
+    .brand {
+        width: 130px
+    }
+
+    .brand img {
+        height: 44px
+    }
+
+    .menu-button {
+        display: block
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        padding: 1rem 16px 1.4rem;
+        background: var(--paper);
+        border-bottom: 1px solid var(--line);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem
+    }
+
+    nav.open {
+        display: flex
+    }
+
+    .hero {
+        min-height: 600px
+    }
+
+    .hero-content {
+        width: calc(100% - 32px);
+        padding: 5rem 0
+    }
+
+    .hero-image {
+        background: linear-gradient(90deg, rgba(9, 22, 31, .92), rgba(9, 22, 31, .48)), url('/assets/images/Hunt-Home-Improvements-Remodeling-Gallery.jpg') center/cover
+    }
+
+    .hero-actions {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem
+    }
+
+    .proof {
+        grid-template-columns: 1fr
+    }
+
+    .proof>div {
+        padding: 1rem
+    }
+
+    .section {
+        padding: 4.5rem 0
+    }
+
+    .section-heading,
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr
+    }
+
+    .service-featured {
+        grid-row: auto;
+        min-height: 350px
+    }
+
+    .about-photo {
+        height: 350px
+    }
+
+    .featured-work {
+        height: 500px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr
+    }
+
+    .tile-tall {
+        grid-row: span 2
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .work-intro {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.2rem
+    }
+
+    .form-row {
+        grid-template-columns: 1fr
+    }
+
+    form {
+        padding: 1.4rem
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr
+    }
+
+    .footer-inner p:last-child {
+        grid-column: auto;
+        grid-row: auto;
+        text-align: left
+    }
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(9, 22, 31, 0.95);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+}
+
+.lightbox.open {
+    display: flex;
+    opacity: 1;
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 1001;
+    padding: 0.5rem;
+}
+
+@media (max-width: 760px) {
+    .lightbox-close {
+        top: 10px;
+        right: 10px;
+        font-size: 2rem;
+    }
+
+    .lightbox {
+        padding: 10px;
+    }
+}
+
+.gallery figure {
+    cursor: pointer;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-list-item {
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+}
+
+.service-img {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--line);
+}
+
+.service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.02em;
+}
+
+.service-content p {
+    color: var(--body);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+@media (max-width: 760px) {
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.modal {
+    padding: 2.5rem 2rem;
+    border: none;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal::backdrop {
+    background: rgba(19, 34, 46, 0.8);
+    backdrop-filter: blur(4px);
+}
+
+.modal h3 {
+    margin-bottom: 1rem;
+    color: var(--green);
+    font-size: 1.8rem;
+}
+
+.modal p {
+    margin-bottom: 2rem;
+    color: var(--body);
+    font-size: 1.05rem;
+}
+
+.subheading {
+    max-width: 470px;
+    color: var(--body);
+    margin: 0;
+    font-size: 1.25rem;
+    font-style: italic;
+}

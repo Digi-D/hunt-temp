@@ -1,0 +1,25 @@
+{
+  "name": "hunt-home-improvements",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hunt Home Improvements marketing site and protected estimate-request form.",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "check": "node --check server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "multer": "^2.3.0",
+    "resend": "^4.6.0",
+    "sharp": "^0.35.4"
+  }
+}

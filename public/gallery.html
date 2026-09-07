@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="View the Hunt Home Improvements project gallery featuring remodeling, repairs, painting, decks, and handyman work in Lexington, Kentucky.">
+    <title>Project Gallery | Hunt Home Improvements</title>
+    <link rel="icon" href="/assets/images/Hunt-Logo-Small.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+      .gallery-page-header { padding-top: 4rem; padding-bottom: 2rem; }
+      .gallery-category { margin-top: 4rem; }
+      .gallery-category h3 { font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid #eaeaea; padding-bottom: 0.5rem; }
+      .cta-band { background-color: #f7f9fa; padding: 4rem 1.5rem; text-align: center; margin: 4rem 0; border-radius: 12px; }
+      .cta-band h3 { font-family: 'Manrope', sans-serif; font-size: 2rem; margin: 0 0 1rem; line-height: 1.2; }
+      .cta-band p { font-size: 1.125rem; margin-bottom: 2rem; color: #4a5568; }
+      .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="topbar"><div class="shell topbar-inner"><span>Serving Lexington, KY & surrounding areas</span><a href="tel:8594756976">Call 859-475-6976</a></div></div>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="/" aria-label="Hunt Home Improvements home"><img src="/assets/images/Hunt-Logo.png" alt="Hunt Home Improvements"></a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" aria-label="Primary navigation">
+          <a href="/">Home</a><a href="/#services">Services</a><a href="/about">About</a><a href="/gallery">Our work</a><a href="/#contact">Contact</a>
+          <a class="button button-small" href="/#contact">Request an estimate</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="section shell gallery-page-header">
+        <div class="section-heading">
+          <p class="eyebrow">OUR WORK</p>
+          <h2>Project Gallery</h2>
+          <p>Take a look at some of our recent home remodeling, painting, and repair projects across Lexington, Kentucky.</p>
+        </div>
+        
+        <div id="gallery-container">
+          <!-- Gallery categories will be injected here -->
+        </div>
+      </section>
+    </main>
+    <footer><div class="shell" style="text-align: center;"><p>© 2026 - All Rights Reserved</p></div></footer>
+    <script src="/app.js" defer></script>
+    <script src="/gallery.js" defer></script>
+  </body>
+</html>
