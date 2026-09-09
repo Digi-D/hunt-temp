@@ -136,7 +136,8 @@ nav>a:not(.button) {
 .button-light {
     background: #fff;
     color: var(--ink);
-    border-color: #fff
+    border-color: #fff;
+    border: 1px solid black;
 }
 
 .button-light:hover {
@@ -175,7 +176,7 @@ nav>a:not(.button) {
 .hero-image {
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(9, 22, 31, .93) 0%, rgba(9, 22, 31, .67) 44%, rgba(9, 22, 31, .18) 75%), url('/assets/images/Hunt-Home-Improvements-Remodeling-Gallery.jpg') center 43%/cover
+    background: linear-gradient(90deg, rgba(9, 22, 31, .93) 0%, rgba(9, 22, 31, .67) 44%, rgba(9, 22, 31, .18) 75%), url('/assets/images/Hunt-Home-Improvements-2.jpg') center 43%/cover
 }
 
 .hero-content {
@@ -234,11 +235,12 @@ h3 {
     color: var(--blue);
     font-weight: 700;
     text-decoration-thickness: 1px;
-    text-underline-offset: .25rem
+    text-underline-offset: .25rem;
 }
 
 .hero .text-link {
-    color: #fff
+    color: #fff;
+    font-size: 1.45rem;
 }
 
 .proof {
@@ -296,7 +298,7 @@ h3 {
 .contact-grid>div>p {
     max-width: 470px;
     color: var(--body);
-    margin: 0
+    margin: 0.5rem 0 1.2rem 0;
 }
 
 .services-grid {
@@ -603,6 +605,10 @@ footer {
 }
 
 @media(max-width:760px) {
+    .topbar {
+        display: none;
+    }
+
     .shell {
         width: min(100% - 32px, 1120px)
     }
@@ -655,7 +661,7 @@ footer {
     }
 
     .hero-image {
-        background: linear-gradient(90deg, rgba(9, 22, 31, .92), rgba(9, 22, 31, .48)), url('/assets/images/Hunt-Home-Improvements-Remodeling-Gallery.jpg') center/cover
+        background: linear-gradient(90deg, rgba(9, 22, 31, .92), rgba(9, 22, 31, .48)), url('/assets/images/Hunt-Home-Improvements-2.jpg') center/cover
     }
 
     .hero-actions {
@@ -732,6 +738,10 @@ footer {
         grid-column: auto;
         grid-row: auto;
         text-align: left
+    }
+
+    .text-link {
+        margin-top: 1.5rem;
     }
 }
 
