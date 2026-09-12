@@ -1,16 +1,16 @@
 const categories = [
   {
     title: 'Remodeling',
-    images: Array.from({length: 26}, (_, i) => `Hunt-Home-Improvements-Remodeling-Gallery-${i+1}.webp`)
+    images: Array.from({length: 27}, (_, i) => `Hunt-Home-Improvements-Remodeling-Gallery-${i+1}.webp`)
   },
   {
     title: 'Decks, Porches & Pergolas',
-    images: Array.from({length: 17}, (_, i) => `HUnt-Home-Improvement-DECKS-PORCHES-PERGOLAS-${i+1}.webp`)
+    images: Array.from({length: 20}, (_, i) => `HUnt-Home-Improvement-DECKS-PORCHES-PERGOLAS-${i+1}.webp`)
   },
   {
     title: 'Painting',
     images: [
-      ...Array.from({length: 12}, (_, i) => `Hunt-Home-Improvement-Residential-Painting-Gallery-${i+1}.webp`),
+      ...Array.from({length: 13}, (_, i) => `Hunt-Home-Improvement-Residential-Painting-Gallery-${i+1}.webp`),
       ...Array.from({length: 9}, (_, i) => `Hunt-Home-Improvement-Commercial-Painting-Gallery-${i+1}.webp`)
     ]
   },
