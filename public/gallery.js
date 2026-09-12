@@ -1,7 +1,7 @@
 const categories = [
   {
     title: 'Remodeling',
-    images: Array.from({length: 24}, (_, i) => `Hunt-Home-Improvements-Remodeling-Gallery-${i+1}.webp`)
+    images: Array.from({length: 26}, (_, i) => `Hunt-Home-Improvements-Remodeling-Gallery-${i+1}.webp`)
   },
   {
     title: 'Decks, Porches & Pergolas',
@@ -16,7 +16,7 @@ const categories = [
   },
   {
     title: 'Flooring',
-    images: Array.from({length: 9}, (_, i) => `Hunt-Home-Improvement-Flooring-Gallery-${i+1}.webp`)
+    images: Array.from({length: 10}, (_, i) => `Hunt-Home-Improvement-Flooring-Gallery-${i+1}.webp`)
   },
   {
     title: 'Installation',
@@ -24,11 +24,11 @@ const categories = [
   },
   {
     title: 'Roofing & Awnings',
-    images: Array.from({length: 6}, (_, i) => `Hunt-Home-Improvement-ROOFING-AND-AWNINGS-Gallery-${i+1}.webp`)
+    images: Array.from({length: 7}, (_, i) => `Hunt-Home-Improvement-ROOFING-AND-AWNINGS-Gallery-${i+1}.webp`)
   },
   {
     title: 'General Repairs',
-    images: Array.from({length: 5}, (_, i) => `Hunt-Home-Improvement-General-Repairs-${i+1}.webp`)
+    images: Array.from({length: 9}, (_, i) => `Hunt-Home-Improvement-General-Repairs-${i+1}.webp`)
   }
 ];
 
@@ -117,4 +117,3 @@ container.addEventListener('click', (e) => {
     if (img) openLightbox(img.src);
   }
 });
-
