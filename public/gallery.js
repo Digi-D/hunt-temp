@@ -28,7 +28,7 @@ const categories = [
   },
   {
     title: 'General Repairs',
-    images: Array.from({length: 9}, (_, i) => `Hunt-Home-Improvement-General-Repairs-${i+1}.webp`)
+    images: Array.from({length: 12}, (_, i) => `Hunt-Home-Improvement-General-Repairs-${i+1}.webp`)
   }
 ];
 
